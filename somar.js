@@ -1,8 +1,11 @@
 function somar(a,b){
-    if((typeof a != 'number')||(typeof b != 'number')){
+    a = parseFloat(a)
+    b = parseFloat(b)
+    if((isFinite(a) == false)||(isFinite(b) == false)){
         return "Caractere inválido"
     }
-    return a+b
+    return a+b 
 }
 
 module.exports = somar
+

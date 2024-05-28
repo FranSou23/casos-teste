@@ -35,3 +35,8 @@ test ('somar A + 3 é igual a 3',()=>{
 test('somar 999999999 + 999999999 é igual a 1999999998',()=>{
     expect(somar(999999999,999999999)).toBe(1999999998)
 })
+
+test('somar "1" + "2" é igual a 3',()=>{
+    expect(somar("1","2")).toBe(3)
+})
+
